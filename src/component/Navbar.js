@@ -1,23 +1,3 @@
-// import React from 'react';
-// import '../component/styles/Navbar.css';
-// import 'bootstrap-icons/font/bootstrap-icons.css';
-// import { Link } from 'react-router-dom';
-
-// const Navbar = () => {
-//   return (
-//     <nav className="navbar">
-//       <div className="logo">FoodLens</div>
-//       <ul className="nav-links">
-       
-//        <Link to="/cart"><i className="bi bi-cart"></i> Cart</Link>
-
-  
-//       </ul>
-//     </nav>
-//   );
-// };
-
-// export default Navbar;
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { FaShoppingCart, FaHome, FaBars } from 'react-icons/fa';
