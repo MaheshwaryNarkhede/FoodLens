@@ -1,0 +1,486 @@
+.product-details-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  .product-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 24px;
+  }
+  
+  .back-button, .add-list-button {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 8px 16px;
+    background-color: #f5f5f5;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: 500;
+    transition: background-color 0.2s;
+  }
+  
+  .back-button:hover, .add-list-button:hover {
+    background-color: #e0e0e0;
+  }
+  
+  .add-list-button {
+    background-color: #4caf50;
+    color: white;
+  }
+  
+  .add-list-button:hover {
+    background-color: #3e8e41;
+  }
+  
+  .product-main {
+    display: flex;
+    gap: 24px;
+    margin-bottom: 24px;
+  }
+  
+  .product-image-container {
+    flex: 0 0 300px;
+    height: 300px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .product-image {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+  }
+  
+  .product-info {
+    flex: 1;
+  }
+  
+  .product-name {
+    font-size: 24px;
+    margin-bottom: 12px;
+  }
+  
+  .product-meta {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    margin-bottom: 16px;
+  }
+  
+  .brand {
+    font-weight: 500;
+  }
+  
+  .quantity {
+    color: #555;
+  }
+  
+  .nutrition-score {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 16px;
+  }
+  
+  .nutri-score-badge {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+  }
+  
+  .allergens-warning {
+    margin-top: 16px;
+    padding: 12px;
+    background-color: #fff0f0;
+    border-radius: 4px;
+  }
+  
+  .allergens-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-top: 8px;
+  }
+  
+  .allergen-tag {
+    background-color: #ffdddd;
+    padding: 4px 8px;
+    border-radius: 4px;
+    font-size: 14px;
+  }
+  
+  .barcode-info {
+    margin-top: 16px;
+    color: #666;
+  }
+  
+  .product-details-tabs {
+    display: flex;
+    border-bottom: 1px solid #ddd;
+    margin-bottom: 20px;
+  }
+  
+  .tab-button {
+    padding: 12px 24px;
+    border: none;
+    background: none;
+    cursor: pointer;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    border-bottom: 3px solid transparent;
+  }
+  
+  .tab-button.active {
+    border-bottom-color: #4caf50;
+    color: #4caf50;
+    font-weight: 500;
+  }
+  
+  .tab-content {
+    padding: 20px 0;
+  }
+  
+  .nutrition-table table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  .nutrition-table th, .nutrition-table td {
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .nutrition-table th {
+    width: 50%;
+  }
+  
+  .ingredients-text {
+    line-height: 1.6;
+  }
+  
+  .additives-section {
+    margin-top: 24px;
+  }
+  
+  .additives-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-top: 12px;
+  }
+  
+  .additive-tag {
+    background-color: #f1f1f1;
+    padding: 6px 12px;
+    border-radius: 16px;
+    font-size: 14px;
+  }
+  
+  .error-container {
+    text-align: center;
+    padding: 60px 20px;
+  }
+  
+  .error-container svg {
+    color: #e63e11;
+    margin-bottom: 16px;
+  }
+  
+  .loading-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 60vh;
+  }
+  
+  .loader {
+    border: 5px solid #f3f3f3;
+    border-top: 5px solid #4caf50;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    animation: spin 1.5s linear infinite;
+    margin-bottom: 20px;
+  }
+  
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 768px) {
+    .product-main {
+      flex-direction: column;
+    }
+    
+    .product-image-container {
+      flex: 0 0 auto;
+      width: 100%;
+      height: 250px;
+    }
+    
+    .product-details-tabs {
+      overflow-x: auto;
+      white-space: nowrap;
+    }
+  }
+  
+  /* FoodList.css */
+  .food-list-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  .list-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 24px;
+  }
+  
+  .list-header h1 {
+    margin: 0;
+    font-size: 24px;
+  }
+  
+  .list-actions {
+    display: flex;
+    gap: 12px;
+  }
+  
+  .action-button {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: 500;
+    background-color: #f5f5f5;
+    transition: background-color 0.2s;
+  }
+  
+  .action-button:hover {
+    background-color: #e0e0e0;
+  }
+  
+  .action-button.delete {
+    background-color: #f44336;
+    color: white;
+  }
+  
+  .action-button.delete:hover {
+    background-color: #d32f2f;
+  }
+  
+  .action-button:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+  }
+  
+  .list-search {
+    margin-bottom: 24px;
+  }
+  
+  .search-input-container {
+    position: relative;
+    width: 100%;
+  }
+  
+  .search-input-container input {
+    width: 100%;
+    padding: 12px 40px 12px 12px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 16px;
+  }
+  
+  .search-icon {
+    position: absolute;
+    right: 12px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #777;
+  }
+  
+  .nutrition-summary {
+    background-color: #f9f9f9;
+    padding: 16px;
+    border-radius: 8px;
+    margin-bottom: 24px;
+  }
+  
+  .nutrition-summary h3 {
+    margin-top: 0;
+    margin-bottom: 12px;
+  }
+  
+  .nutrition-grades {
+    display: flex;
+    gap: 16px;
+    flex-wrap: wrap;
+  }
+  
+  .grade-item {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+  
+  .grade-badge {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-weight: bold;
+  }
+  
+  .grade-count {
+    font-weight: 500;
+  }
+  
+  .food-items-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .food-list-item {
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #eee;
+    padding: 16px 0;
+    position: relative;
+  }
+  
+  .item-content {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    flex: 1;
+    cursor: pointer;
+  }
+  
+  .item-image {
+    width: 80px;
+    height: 80px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .item-image img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+  }
+  
+  .item-details {
+    flex: 1;
+  }
+  
+  .item-name {
+    margin: 0 0 8px;
+    font-size: 18px;
+  }
+  
+  .item-meta {
+    display: flex;
+    gap: 12px;
+    color: #666;
+    font-size: 14px;
+    margin-bottom: 8px;
+  }
+  
+  .nutri-badge {
+    display: inline-flex;
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-weight: bold;
+    font-size: 12px;
+  }
+  
+  .remove-item-button {
+    background: none;
+    border: none;
+    color: #f44336;
+    cursor: pointer;
+    padding: 8px;
+    opacity: 0.7;
+    transition: opacity 0.2s;
+  }
+  
+  .remove-item-button:hover {
+    opacity: 1;
+  }
+  
+  .empty-list {
+    text-align: center;
+    padding: 60px 0;
+    color: #666;
+  }
+  
+  .browse-products-btn {
+    margin-top: 16px;
+    padding: 10px 20px;
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: 500;
+  }
+  
+  .browse-products-btn:hover {
+    background-color: #3e8e41;
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 768px) {
+    .list-header {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 16px;
+    }
+    
+    .list-header h1 {
+      order: -1;
+    }
+    
+    .list-actions {
+      width: 100%;
+      justify-content: space-between;
+    }
+  }

@@ -1,0 +1,205 @@
+/* Sidebar styles */
+.sidebar {
+  padding: 24px 16px;
+  height: 100%;
+  color: #333;
+  overflow-y: auto;
+}
+
+.sidebar h2 {
+  font-size: 1.5rem;
+  margin-bottom: 24px;
+  padding-bottom: 16px;
+  border-bottom: 1px solid #eee;
+}
+
+/* Filter sections */
+.filter-section {
+  margin-bottom: 24px;
+}
+
+.section-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+  padding: 8px 0;
+}
+
+.section-header h3 {
+  font-size: 1.1rem;
+  font-weight: 500;
+  margin: 0;
+}
+
+.filter-group {
+  margin-top: 12px;
+  padding-left: 4px;
+}
+
+/* Dropdown styling */
+.styled-select {
+  width: 100%;
+  padding: 10px 12px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  background-color: white;
+  font-size: 0.95rem;
+  cursor: pointer;
+  appearance: none;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 24 24' fill='none' stroke='%23666' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M6 9l6 6 6-6'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 10px center;
+  background-size: 16px;
+}
+
+.styled-select:focus {
+  outline: none;
+  border-color: #3498db;
+  box-shadow: 0 0 0 2px rgba(52, 152, 219, 0.2);
+}
+
+/* Category buttons */
+.category-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 12px;
+}
+
+.category-buttons button {
+  padding: 6px 12px;
+  background-color: #f0f2f5;
+  border: 1px solid #ddd;
+  border-radius: 16px;
+  font-size: 0.875rem;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.category-buttons button:hover {
+  background-color: #e6e9ed;
+}
+
+.category-buttons button.active {
+  background-color: #3498db;
+  color: white;
+  border-color: #3498db;
+}
+
+/* Custom checkbox styling */
+.checkbox-group {
+  margin-top: 16px;
+}
+
+.checkbox-label {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  user-select: none;
+}
+
+.checkbox-label input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+.checkbox-custom {
+  position: relative;
+  height: 20px;
+  width: 20px;
+  background-color: #fff;
+  border: 2px solid #ddd;
+  border-radius: 4px;
+  margin-right: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.2s;
+}
+
+.checkbox-label:hover input ~ .checkbox-custom {
+  border-color: #3498db;
+}
+
+.checkbox-label input:checked ~ .checkbox-custom {
+  background-color: #3498db;
+  border-color: #3498db;
+}
+
+.check-icon {
+  color: white;
+  font-size: 0.75rem;
+}
+
+.checkbox-text {
+  font-size: 0.95rem;
+}
+
+.helper-text {
+  margin-top: 6px;
+  margin-left: 30px;
+  font-size: 0.8rem;
+  color: #666;
+}
+
+/* Filter action buttons */
+.filter-actions {
+  display: flex;
+  gap: 12px;
+  margin-top: 32px;
+}
+
+.reset-btn, .apply-btn {
+  flex: 1;
+  padding: 12px;
+  border-radius: 6px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s;
+  text-align: center;
+}
+
+.reset-btn {
+  background-color: #f0f2f5;
+  border: 1px solid #ddd;
+  color: #666;
+}
+
+.reset-btn:hover {
+  background-color: #e6e9ed;
+}
+
+.apply-btn {
+  background-color: #3498db;
+  border: none;
+  color: white;
+}
+
+.apply-btn:hover {
+  background-color: #2980b9;
+}
+
+/* Responsive sidebar */
+@media (max-width: 768px) {
+  .sidebar {
+    padding: 16px 12px;
+  }
+  
+  .sidebar h2 {
+    font-size: 1.25rem;
+    margin-bottom: 16px;
+  }
+  
+  .mobile-filters .sidebar {
+    padding: 0;
+    height: auto;
+  }
+  
+  .mobile-filters .filter-section {
+    margin-bottom: 16px;
+  }
+}
