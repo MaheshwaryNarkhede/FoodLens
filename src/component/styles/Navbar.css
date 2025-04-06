@@ -1,44 +1,4 @@
-/* .navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: #0e4d92;
-    padding: 1rem 2rem;
-    color: white;
-  }
-  
-  .logo {
-    font-size: 24px;
-    font-weight: bold;
-    letter-spacing: 1px;
-  }
-  
-  .nav-links {
-    display: flex;
-    gap: 20px;
-  }
-  
-  .nav-links li {
-    list-style: none;
-  }
-  
-  .nav-links a {
-    text-decoration: none;
-    color: white;
-    font-weight: 500;
-    transition: color 0.3s ease;
-  }
-  
-  .nav-links a:hover {
-    color: #ffd369;
-  }
-  .bi {
-    font-size: 1.2rem;
-    margin-right: 5px;
-    color: #fff;
-  }
-   */
-   /* Navbar.css */
+
 .navbar {
   background-color: #333;
   height: 60px;
